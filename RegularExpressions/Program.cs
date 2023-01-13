@@ -11,7 +11,6 @@ namespace RegularExpressions
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Regular Expression Program");
-            //RegularExpression.Validate3ConsequativeChars();
             RegularExpression.ValidateFirstName();
             Console.ReadLine();
         }

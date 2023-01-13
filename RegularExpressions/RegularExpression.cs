@@ -8,24 +8,7 @@ using System.Threading.Tasks;
 namespace RegularExpressions
 {
     public class RegularExpression
-    {
-        public static void Validate3ConsequativeChars()
-        {
-            string pattern = "^[0-9]*[a-zA-Z]{3,}[0-9a-zA-Z]*$";
-            string[] arr = {"111","1aaa","aa11","bcc","1a1aab","1abb23a"};
-            
-            foreach (string str in arr)
-            {
-                if(Regex.IsMatch(str,pattern))
-                {
-                    Console.WriteLine("{0} is Valid",str);
-                }
-                else
-                {
-                    Console.WriteLine("{0} is Invalid", str);
-                }
-            }
-        }
+    {   //UC1 Validate First Name
         public static void ValidateFirstName()
         {
             string pattern = "^[a-zA-Z]{3,}$";
