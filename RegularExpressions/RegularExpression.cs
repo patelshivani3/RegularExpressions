@@ -51,9 +51,10 @@ namespace RegularExpressions
             string[] arr = { "91 7234567890", "91 8122334455", "435261336475" };
             TestMethod(arr, pattern);
         }
-        //UC5 Validate Password minimum 8 charactor
+        //UC5 Validate Password minimum 8 character
         //UC6 Atleast 1 uppercase
         //UC7 AtLeast 1 numeric
+        //UC8 AtLeast 1 special character
         public static void ValidatePassword()
         {
             string pattern = "^(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[a-z])(?=.*?[#?!@$%^&*-]).{8,}$";
