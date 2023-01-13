@@ -12,6 +12,9 @@ namespace RegularExpressions
         {
             Console.WriteLine("Welcome to Regular Expression Program");
             RegularExpression.ValidateFirstName();
+            Console.WriteLine("---------------------------");
+            RegularExpression.ValidateLastName();
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
     }

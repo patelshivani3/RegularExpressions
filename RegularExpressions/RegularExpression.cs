@@ -8,11 +8,9 @@ using System.Threading.Tasks;
 namespace RegularExpressions
 {
     public class RegularExpression
-    {   //UC1 Validate First Name
-        public static void ValidateFirstName()
+    {   
+        public static void TestMethod(string[] arr,string pattern)
         {
-            string pattern = "^[a-zA-Z]{3,}$";
-            string[] arr = { "shivani", "123abc","Shivani" };
             foreach (string str in arr)
             {
                 if (Regex.IsMatch(str, pattern))
@@ -24,6 +22,20 @@ namespace RegularExpressions
                     Console.WriteLine("\n{0} is Invalid", str);
                 }
             }
+        }
+        //UC1 Validate First Name
+        public static void ValidateFirstName()
+        {
+            string pattern = "^[a-zA-Z]{3,}$";
+            string[] arr = { "shivani", "123abc","Shivani" };
+            TestMethod(arr , pattern);
+        }
+        //UC2 Validate Last Name
+        public static void ValidateLastName()
+        {
+            string pattern = "^[a-zA-Z]{3,}$";
+            string[] arr = { "patel", "123abc", "Patel" };
+            TestMethod(arr, pattern);
         }
     }
 }
