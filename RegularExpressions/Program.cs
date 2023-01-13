@@ -15,6 +15,7 @@ namespace RegularExpressions
             Console.WriteLine("---------------------------");
             RegularExpression.ValidateLastName();
             Console.WriteLine("---------------------------");
+            RegularExpression.ValidateEmail();
             Console.ReadLine();
         }
     }

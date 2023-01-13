@@ -37,5 +37,12 @@ namespace RegularExpressions
             string[] arr = { "patel", "123abc", "Patel" };
             TestMethod(arr, pattern);
         }
+        //UC3 Validate Email
+        public static void ValidateEmail()
+        {
+            string pattern = "^[a-zA-Z0-9]+([.,-][A-Za-z0-9]+)*[@][a-zA-Z0-9]+[.][a-zA-Z]+([.][a-zA-Z]+)?$";
+            string[] arr = { "abc.xyz@bl.co.in", "abc@gmail.com", "abc.@bl.in" ,"@bl.co.in"};
+            TestMethod(arr, pattern);
+        }
     }
 }
