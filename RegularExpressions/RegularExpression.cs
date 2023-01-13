@@ -54,8 +54,8 @@ namespace RegularExpressions
         //UC5 & UC6 Validate Password minimum 8 charactor with atleast 1 uppercase
         public static void ValidatePassword()
         {
-            string pattern = "^[A-Z]{1}[a-zA-Z0-9]{7,}$";
-            string[] arr = { "dbcyudfjyt", "ABCD4455", "43Aafd50" };
+            string pattern = "^(?=.*?[A-Z]).{8,}$";
+            string[] arr = { "dbcyudfjyt", "ABCD4455", "43Aafd50","Password" };
             TestMethod(arr, pattern);
         }
     }
