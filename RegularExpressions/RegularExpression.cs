@@ -51,5 +51,12 @@ namespace RegularExpressions
             string[] arr = { "91 7234567890", "91 8122334455", "435261336475" };
             TestMethod(arr, pattern);
         }
+        //UC5 Validate Password minimum 8 charactor
+        public static void ValidatePassword()
+        {
+            string pattern = "^[a-zA-Z0-9]{8,}$";
+            string[] arr = { "adgtyu45", "ABCD4455", "43ABC0" };
+            TestMethod(arr, pattern);
+        }
     }
 }

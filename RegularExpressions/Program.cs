@@ -18,6 +18,8 @@ namespace RegularExpressions
             RegularExpression.ValidateEmail();
             Console.WriteLine("---------------------------");
             RegularExpression.ValidateMobileNo();
+            Console.WriteLine("---------------------------");
+            RegularExpression.ValidatePassword();
             Console.ReadLine();
         }
     }
