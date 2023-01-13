@@ -56,8 +56,8 @@ namespace RegularExpressions
         //UC7 AtLeast 1 numeric
         public static void ValidatePassword()
         {
-            string pattern = "^(?=.*?[A-Z])(?=.*?[0-9]).{8,}$";
-            string[] arr = { "dbcyudx1", "ABCD4455", "43Aafd50","Password" };
+            string pattern = "^(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[a-z])(?=.*?[#?!@$%^&*-]).{8,}$";
+            string[] arr = { "dbcyudx1", "ABCD4455", "43Aafd50","Password","Abcd@1234" };
             TestMethod(arr, pattern);
         }
     }
