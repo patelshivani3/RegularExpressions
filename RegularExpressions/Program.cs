@@ -20,6 +20,7 @@ namespace RegularExpressions
             RegularExpression.ValidateMobileNo();
             Console.WriteLine("---------------------------");
             RegularExpression.ValidatePassword();
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
     }
