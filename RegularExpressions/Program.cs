@@ -11,16 +11,17 @@ namespace RegularExpressions
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Regular Expression Program");
-            RegularExpression.ValidateFirstName();
+            //RegularExpression.ValidateFirstName();
+            //Console.WriteLine("---------------------------");
+            //RegularExpression.ValidateLastName();
+            //Console.WriteLine("---------------------------");
+            //RegularExpression.ValidateEmail();
+            //Console.WriteLine("---------------------------");
+            //RegularExpression.ValidateMobileNo();
+            //Console.WriteLine("---------------------------");
+            //RegularExpression.ValidatePassword();
             Console.WriteLine("---------------------------");
-            RegularExpression.ValidateLastName();
-            Console.WriteLine("---------------------------");
-            RegularExpression.ValidateEmail();
-            Console.WriteLine("---------------------------");
-            RegularExpression.ValidateMobileNo();
-            Console.WriteLine("---------------------------");
-            RegularExpression.ValidatePassword();
-            Console.WriteLine("---------------------------");
+            RegularExpression.ValidateEmailSample();
             Console.ReadLine();
         }
     }

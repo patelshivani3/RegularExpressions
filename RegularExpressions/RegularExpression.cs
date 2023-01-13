@@ -15,11 +15,11 @@ namespace RegularExpressions
             {
                 if (Regex.IsMatch(str, pattern))
                 {
-                    Console.WriteLine("\n{0} is Valid", str);
+                    Console.WriteLine("{0} is Valid", str);
                 }
                 else
                 {
-                    Console.WriteLine("\n{0} is Invalid", str);
+                    Console.WriteLine("{0} is Invalid", str);
                 }
             }
         }
@@ -59,6 +59,17 @@ namespace RegularExpressions
         {
             string pattern = "^(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[a-z])(?=.*?[#?!@$%^&*-]).{8,}$";
             string[] arr = { "dbcyudx1", "ABCD4455", "43Aafd50","Password","Abcd@1234" };
+            TestMethod(arr, pattern);
+        }
+        //UC9 All Email Sample
+        public static void ValidateEmailSample()
+        {
+            string pattern = "^[a-zA-Z0-9]+([.,-][A-Za-z0-9]+)*[@][a-zA-Z0-9]+[.][a-zA-Z]+([.][a-zA-Z]+)?$";
+            string[] arr = { "abc@yahoo.com","abc-100@yahoo.com","abc.100@yahoo.com","abc111@abc.com",
+                             "abc-100@abc.net","abc.100@abc.com.au","abc@1.com","abc@gmail.com.com","abc+100@gmail.com",
+                             "abc", "abc@.com.my","abc123@.com","abc123@.com.com",".abc@abc.com",
+                             "abc()*@gmail.com","abc@%*.com","abc..2002@gmail.com","abc.@gmail.com",
+                             "abc@abc@gmail.com","abc@gmail.com.1a","abc@gmail.com.aa.au"};
             TestMethod(arr, pattern);
         }
     }
