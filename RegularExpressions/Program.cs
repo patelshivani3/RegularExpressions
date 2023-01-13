@@ -16,6 +16,8 @@ namespace RegularExpressions
             RegularExpression.ValidateLastName();
             Console.WriteLine("---------------------------");
             RegularExpression.ValidateEmail();
+            Console.WriteLine("---------------------------");
+            RegularExpression.ValidateMobileNo();
             Console.ReadLine();
         }
     }

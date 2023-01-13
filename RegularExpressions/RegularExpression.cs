@@ -44,5 +44,12 @@ namespace RegularExpressions
             string[] arr = { "abc.xyz@bl.co.in", "abc@gmail.com", "abc.@bl.in" ,"@bl.co.in"};
             TestMethod(arr, pattern);
         }
+        //UC4 Validate Mobile Number
+        public static void ValidateMobileNo()
+        {
+            string pattern = "^[91]*[ ]*[6-9]{1}[0-9]{9}$";
+            string[] arr = { "91 7234567890", "91 8122334455", "435261336475" };
+            TestMethod(arr, pattern);
+        }
     }
 }
